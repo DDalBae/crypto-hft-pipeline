@@ -92,6 +92,18 @@ python backtest_hybrid_scalp_with_costs_rlmode_v59.py   --data "data/ethusdt_val
 - Numba
 - Optional: Binance API keys for live data streaming
 
+## 🔬 Quantitative Analysis & Data Pipeline (`/analysis_tools`)
+
+### 📊 Strategy Diagnostics & Health Check
+* **`analyze_trail_counterfactual_v3.py`**: A counterfactual analysis tool that simulates PnL impact under different fee scenarios (Maker vs. Taker) for Trailing Stop exits.
+* **`diagnose_effective_geometry_v5.py`**: Analyzes trade geometry, including MFE (Maximum Favorable Excursion) and MAE (Maximum Adverse Excursion) relative to local Soft-SL levels.
+* **`strategy_health_check_v2.py`**: Audits strategy robustness by analyzing profit concentration (Top 1%/5% share) and categorizing failure reasons (Early fail vs. Near-BEP fail).
+* **`summarize_motion_profile_v3.py`**: Provides statistical breakdowns of holding times and price motion profiles categorized by exit reasons (TP, SL, TRAIL, MAX_HOLD).
+
+### ⚙️ System Utilities
+* **`regime_summary_with_filters_v5.py`**: Summarizes strategy pass-rates and performance metrics across different market regimes (Volatility, ATR, and Volume filters).
+* **`smoke_check_final_softsl.py`**: Validates the consistency between entry-time Soft-SL logic and final exit execution.
+
 ## ⚠️ Disclaimer
 
 This repository is intended for educational and research purposes only. High-frequency trading involves significant financial risk. The provided models and backtest results do not guarantee future performance. Use at your own risk.

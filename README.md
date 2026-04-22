@@ -1,5 +1,9 @@
 # Hybrid Scalp Quant Pipeline: TCN-LSTM Architecture
 
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-Latest-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 This repository provides a deep learning-based quantitative trading pipeline designed for high-frequency scalping (HFT) on 1-minute (1m) cryptocurrency intervals, such as Binance ETHUSDT.
 
 Going beyond simple time-series prediction, this project utilizes a hybrid architecture that combines the local feature extraction of **TCN (Temporal Convolutional Networks)** with the long-term memory capabilities of **LSTM**. It also includes a realistic backtesting environment that reflects fees and slippage, along with an automated hyperparameter tuning system powered by **Optuna**.
